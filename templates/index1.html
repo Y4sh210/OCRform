@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../static/index1.css">
+    <title>Event Registration Form.</title>
+    <div id="event-registration">
+        <form method="post" action="/data" enctype="multipart/form-data">
+            <dl>
+                <p>
+                    <input type="file" name="file" autocomplete="off" required>
+                </p>
+            </dl>
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+        </form>
+        <form autocomplete="off" id="event-registration-form" method="POST" action="/">
+            <!-- Form contents will go here -->
+            <fieldset>
+                <label for="first-name">First Name</label>
+                <input autocomplete="false" type="text" id="first-name" name="first-name" />
+
+                <label for="last-name">Last Name</label>
+                <input autocomplete="false" type="text" id="last-name" name="last-name" />
+
+                <label for="email">Email</label>
+                <input autocomplete="false" type="email" id="email" name="email" />
+
+                <label for="street">Street Address</label>
+                <input autocomplete="false" type="text" id="street" name="street" />
+
+                <label for="phone">Phone</label>
+                <input autocomplete="false" type="text" id="phone" name="phone" />
+
+                <label for="TC"> I agree to all Terms and
+                    Conditions.</label>
+                <input type="checkbox" id="TC" name="TC" value="TC">
+            </fieldset>
+            <button type="submit" class="file_submit">Submit Form</button>
+    </div>
+</head>
+
+<body>
+</body>
+
+</html>

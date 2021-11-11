@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../static/index1.css">
+    <title>Event Registration Form.</title>
+    <div id="event-registration">
+        <form id="event-registration-form" method="POST" action="/result">
+            <!-- Form contents will go here -->
+            <fieldset>
+                <label for="first-name">First Name</label>
+                <input autocomplete="off" type="text" id="first-name" name="first-name" value="{{firstName}}" />
+
+                <label for="last-name">Last Name</label>
+                <input autocomplete="off" type="text" id="last-name" name="last-name" value="{{lastName}}" />
+
+                <label for="email">Email</label>
+                <input autocomplete="off" type="email" id="email" name="email" value="{{email}}" />
+
+                <label for="street">Street Address</label>
+                <input autocomplete="off" type="text" id="street" name="street" value="{{address}}" />
+
+                <label for="phone">Phone</label>
+                <input autocomplete="off" type="text" id="phone" name="phone" value="{{phone}}" />
+
+                <input type="checkbox" id="TC" name="TC" value="TC">
+                <label for="TC"> I agree to all Terms and Conditions.</label>
+            </fieldset>
+            <button type="submit" class="file_submit">Submit Form</button>
+    </div>
+</head>
+
+<body>
+</body>
+
+</html>
